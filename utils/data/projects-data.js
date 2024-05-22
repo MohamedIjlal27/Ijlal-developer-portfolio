@@ -6,7 +6,7 @@ import travel from '/public/image/travel.jpg';
 export const projectsData = [
     {
         id: 1,
-        name: 'Mohamed Ijlal',
+        name: 'Under Developing',
         description: "",
         tools: [],
         role: '',
