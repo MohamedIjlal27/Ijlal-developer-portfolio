@@ -14,7 +14,26 @@ export const projectsData = [
         demo: '',
         image: "", 
     },
-   
+    {
+        id: 2,
+        name: 'React-Inventory-Management-System',
+        description: "inventory management system using React + Vite (Only Front End with static data. to check the screen shot visit to the git repo using below link",
+        tools: ["Vite", "ReactJs"],
+        role: 'Full Stack',
+        repo: 'https://github.com/MohamedIjlal27/React-Inventory-Management-System',
+        demo: '',
+        image: "", 
+    },
+    {
+        id: 3,
+        name: 'React-Inventory-Management-System',
+        description: "inventory management system using React + Vite (Only Front End with static data. to check the screen shot visit to the git repo using below link",
+        tools: ["Vite", "ReactJs"],
+        role: 'Full Stack',
+        repo: 'https://github.com/MohamedIjlal27/React-Inventory-Management-System',
+        demo: '',
+        image: "", 
+    },
 ];
 
 
