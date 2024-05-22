@@ -7,10 +7,10 @@ export const projectsData = [
     {
         id: 1,
         name: 'React-JobFinder',
-        description: "web application for searching vacancies. At the moment, all data is static and the project is still underway.",
+        description: "web application for searching vacancies. At the moment, all data is static and the project is still underway.to check the screen shot visit to the git repo using below link",
         tools: ["Vite", "ReactJs"],
         role: 'Full Stack',
-        code: '',
+        Repo: 'https://github.com/MohamedIjlal27/React-JobFinder',
         demo: '',
         image: crefin, 
     },
