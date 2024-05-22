@@ -6,10 +6,10 @@ import travel from '/public/image/travel.jpg';
 export const projectsData = [
     {
         id: 1,
-        name: 'Adding Soon',
-        description: "",
-        tools: [],
-        role: '',
+        name: 'React-JobFinder',
+        description: "web application for searching vacancies. At the moment, all data is static and the project is still underway.",
+        tools: ["Vite", "ReactJs"],
+        role: 'Full Stack',
         code: '',
         demo: '',
         image: crefin, 
