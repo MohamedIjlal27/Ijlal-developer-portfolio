@@ -6,21 +6,21 @@ import travel from '/public/image/travel.jpg';
 export const projectsData = [
     {
         id: 1,
-        name: 'React-JobFinder',
-        description: "web application for searching vacancies. At the moment, all data is static and the project is still underway.to check the screen shot visit to the git repo using below link",
-        tools: ["Vite", "ReactJs"],
+        name: 'OneStopShop Ecommerce Store',
+        description: "Ecommerce web application using Next Js",
+        tools: ["Next", "ReactJs"],
         role: 'Full Stack',
-        repo: 'https://github.com/MohamedIjlal27/React-JobFinder',
+        repo: 'https://github.com/MohamedIjlal27/OneStopShop.git',
         demo: '',
         image: "", 
     },
     {
         id: 2,
-        name: 'React-Inventory-Management-System',
-        description: "inventory management system using React + Vite (Only Front End with static data. to check the screen shot visit to the git repo using below link",
-        tools: ["Vite", "ReactJs"],
+        name: 'NextJs-Inventory-Management-System',
+        description: "inventory management system using React + Next Complete Front & Back end",
+        tools: ["Next", "ReactJs"],
         role: 'Full Stack',
-        repo: 'https://github.com/MohamedIjlal27/React-Inventory-Management-System',
+        repo: 'https://github.com/MohamedIjlal27/Saas-Inventory.git',
         demo: '',
         image: "", 
     },
@@ -34,6 +34,17 @@ export const projectsData = [
         demo: '',
         image: "", 
     },
+    {
+        id: 4,
+        name: 'React E-Safar',
+        description: "E-Safar Career counselling Web Application",
+        tools: ["MERN"],
+        role: 'Full Stack',
+        repo: 'Private(Freelance Project)',
+        demo: '',
+        image: "", 
+    },
+   
 ];
 
 
