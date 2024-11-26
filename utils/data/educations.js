@@ -2,7 +2,7 @@ export const educations = [
   {
     id: 1,
     title: "Bsc (Hons) Computer Science in Software Engineering",
-    duration: "Jan 2024 - Present",
+    duration: "Jan 2024 - Des 2024",
     institution: "Kingston University UK(Esoft Metro Campsu Sri Lanka)",
   },
   {
