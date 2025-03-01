@@ -8,8 +8,8 @@ export const projectsData = [
     id: 1,
     name: "DMS",
     description:
-      "DMS(Dispatch Managment System) is a state-of-the-art mobile application designed to streamline the process of collecting and delivering samples between local channel centers and laboratories. Developed using React Native for cross-platform compatibility on both iOS and Android, and powered by Node.js on the backend, Rest Lab ensures efficient, reliable, and real-time management of sample logistics.",
-    tools: ["React Native, MongoDB, NodeJs and Express"],
+      "DMS(Dispatch Managment System) is a state-of-the-art mobile application designed to streamline the process of collecting and delivering samples between local channel centers and laboratories. Developed using Flutter for cross-platform compatibility on both iOS and Android, and powered by Node.js on the backend, Rest Lab ensures efficient, reliable, and real-time management of sample logistics.",
+    tools: ["Flutter, MongoDB, NodeJs and Express"],
     role: "Full Stack",
     repo: "Private(Freelance Project)",
     demo: "",
@@ -18,8 +18,8 @@ export const projectsData = [
   {
     id: 2,
     name: "CRM Mobile App",
-    description: "The CRM Mobile App is a comprehensive solution designed to streamline sales force automation, customer onboarding, and support for both merchants and end customers. This app empowers sales teams with tools to manage leads, track sales progress, and automate workflows, while also providing an intuitive onboarding experience for new customers. Additionally, it offers seamless support functionalities for merchants and customers alike, ensuring efficient issue resolution and enhanced communication. Built using React Native for cross-platform functionality and powered by Node.js on the backend, the app offers a robust, real-time solution for modern sales and customer management.",
-    tools: ["React Native", "MongoDB", "Node.js", "Express"],
+    description: "The CRM Mobile App is a comprehensive solution designed to streamline sales force automation, customer onboarding, and support for both merchants and end customers. This app empowers sales teams with tools to manage leads, track sales progress, and automate workflows, while also providing an intuitive onboarding experience for new customers. Additionally, it offers seamless support functionalities for merchants and customers alike, ensuring efficient issue resolution and enhanced communication. Built using Flutter for cross-platform functionality and powered by Node.js on the backend, the app offers a robust, real-time solution for modern sales and customer management.",
+    tools: ["Flutter", "MongoDB", "Node.js", "Express"],
     role: "Full Stack Developer",
     repo: "Private (Freelance Project)",
     demo: "",
