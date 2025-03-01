@@ -9,6 +9,7 @@ export const skillsData = [
   "MySQL",
   "Java",
   "PostgreSQL",
+  "Linux",
   "Git",
   "AWS",
   "Bootstrap",
