@@ -15,12 +15,12 @@ export const experiences = [
   },
   {
     id: 2,
-    title: "Software Engineer(Mobile & Web)",
+    title: "Accosiate Software Engineer(Mobile & Web)",
     company: " HotCat Technology Sri Lanka.",
     workmode: "Remote until August 2023",
-    duration: "(Jan 2022 - May 2024)",
+    duration: "(June 2023 - May 2024)",
   },
-  {
+  /*{
     id: 3,
     title: "Associate Software Engineer",
     company: " HotCat Technology Sri Lanka.",
@@ -33,12 +33,11 @@ export const experiences = [
     company: " HotCat Technology Sri Lanka.",
     workmode: "Remote",
     duration: "(Jan 2021- March 2021)",
-  },
+  },*/
   {
     id: 6,
-    title: "Freelance Dot Net Developer(VB.NET)",
-    company: "Pakistan",
+    title: "Freelance Software Developer",
     workmode: "Remote",
-    duration: "(2021-2022)",
+    duration: "(2022-Present)",
   },
 ];

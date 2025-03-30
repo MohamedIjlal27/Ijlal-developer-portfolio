@@ -1,6 +1,6 @@
 export const personalData = {
   name: "Mohamed Ijlal",
-  profile: "/profile.png",
+  profile: "/profile.jpg",
   designation: "Software Developer",
   description:
     "My name is Mohamed Ijlal. I am a self-motivated Experienced Software Engineer with 3 years of expertise in building high-performance React.js, TypeScript, and Flutter & React Native applications. Passionate about open-source contributions, accessibility, and performance optimization. Skilled in REST API development, Linux-based development (Ubuntu), and containerized environments (Docker). Adept at working in globally distributed teams and contributing to open-source projects",
