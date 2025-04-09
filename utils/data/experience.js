@@ -17,7 +17,7 @@ export const experiences = [
     id: 3,
     title: "Accosiate Software Engineer(Mobile & Web)",
     company: " HotCat Technology Sri Lanka.",
-    workmode: "Remote until August 2023",
+    workmode: "Remote",
     duration: "(April 2023 – April 2024)",
   },
   {
