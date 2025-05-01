@@ -1,8 +1,8 @@
 import { projectsData } from '@/utils/data/projects-data';
 import ProjectCard from './project-card';
+import Marquee from "react-fast-marquee";
 
 const Projects = () => {
-
   return (
     <div id='projects' className="relative z-50 my-12 lg:my-24">
       <div className="sticky top-10 flex flex-col items-center">
@@ -16,18 +16,27 @@ const Projects = () => {
       </div>
 
       <div className="pt-24">
-        <div className="flex flex-col gap-6 items-center">
-          {projectsData.slice(0, 4).map((project, index) => (
-            <div
-              id={`sticky-card-${index + 1}`}
-              key={index}
-              className="sticky-card w-full max-w-2xl sticky"
-            >
-              <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
-                <ProjectCard project={project} />
+        <div className="w-full">
+          <Marquee
+            gradient={false}
+            speed={80}
+            pauseOnHover={true}
+            pauseOnClick={true}
+            delay={0}
+            play={true}
+            direction="left"
+          >
+            {projectsData.map((project, index) => (
+              <div
+                key={index}
+                className="w-[400px] min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
+              >
+                <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)]">
+                  <ProjectCard project={project} />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </Marquee>
         </div>
       </div>
     </div>
