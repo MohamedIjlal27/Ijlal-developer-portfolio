@@ -3,7 +3,7 @@ export const personalData = {
   profile: "/profile.jpg",
   designation: "Software Developer",
   description:
-    "My name is Mohamed Ijlal. I am a self-motivated Experienced Software Engineer with 3 years of expertise in building high-performance React.js, TypeScript, and Flutter & React Native applications. Passionate about open-source contributions, accessibility, and performance optimization. Skilled in REST API development, Linux-based development (Ubuntu), and containerized environments (Docker). Adept at working in globally distributed teams and contributing to open-source projects",
+    "Full-Stack Engineer with 3+ years of experience building scalable web apps, cross-platform mobilesolutions, and microservices-based systems using Java/Spring Boot and NodeJs/ExpressJs (backend) and React/React Native (frontend). Skilled in designing high-performance REST/GraphQL APIs, cloud-native architectures (AWS), and AI-ready data pipelines for fintech, e-commerce, and SaaS. Proficient in DevOps practices (CI/CD, Docker, Kubernetes), state management (Redux), and compliance(GDPR/CCPA). Adept at end-to-end delivery, optimizing latency by 25–40% via caching and event-driven systems (Redis), and collaborating with cross-functional teams to integrate AI/ML-driven features. Strong leadership experience mentoring juniors and leading Agile workflows.",
   email: "mohamedijlal27@outlook.com",
   phone: "+94727920628",
   address: "Colombo Sri Lanka ",
