@@ -3,7 +3,7 @@ export const personalData = {
   profile: "/profile.jpg",
   designation: "Software Developer",
   description:
-    "Full-Stack Engineer with 3+ years of experience building scalable web apps, cross-platform mobilesolutions, and microservices-based systems using Java/Spring Boot and NodeJs/ExpressJs (backend) and React/React Native (frontend). Skilled in designing high-performance REST/GraphQL APIs, cloud-native architectures (AWS), and AI-ready data pipelines for fintech, e-commerce, and SaaS. Proficient in DevOps practices (CI/CD, Docker, Kubernetes), state management (Redux), and compliance(GDPR/CCPA). Adept at end-to-end delivery, optimizing latency by 25–40% via caching and event-driven systems (Redis), and collaborating with cross-functional teams to integrate AI/ML-driven features. Strong leadership experience mentoring juniors and leading Agile workflows.",
+    `Full-Stack & Mobile Developer with 3+ years of experience, specializing in Flutter & Dart for cross-platform mobile applications, with deep knowledge of Firebase integrations (auth, messaging, remote config), mobile app releases (Play Store, TestFlight), and secure configuration management (multi-tenancy/app flavors). Proficient with Azure DevOps, JavaScript/TypeScript, and backend systems built using Node.js and .Net. Experienced in developing and maintaining Progressive Web Apps (PWA) via Flutter and using monitoring tools like Sentry. Comfortable with agile environments and multi-technology stacks`,
   email: "mohamedijlal27@outlook.com",
   phone: "+94727920628",
   address: "Colombo Sri Lanka ",
