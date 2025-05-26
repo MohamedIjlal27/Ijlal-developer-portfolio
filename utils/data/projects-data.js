@@ -113,5 +113,15 @@ export const projectsData = [
     demo: "",
     code: "",
     image: "",
+  },
+  {
+    id: 12,
+    name: "WMS (Warehouse Management System)",
+    description:
+      "Native Android warehouse app built with Kotlin to streamline inventory scanning, dispatching, and receiving. Implemented offline-first functionality with local data sync, improving task speed by 40%.",
+    role: "Mobile App Developer",
+    demo: "",
+    code: "",
+    image: "",
   }
 ];
