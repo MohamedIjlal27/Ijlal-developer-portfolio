@@ -8,7 +8,7 @@ export const projectsData = [
     id: 1,
     name: "DMS (Delivery Management System)",
     description:
-      "Flutter-based mobile app for managing sample delivery between labs and collection centers. Integrated Firebase Auth, Cloud Messaging, NetSuite ERP, and used Provider/Riverpod for state. Enabled white-labelling, app flavors, and released via Google Play and TestFlight.",
+      "React Native mobile app integrated with Firebase Auth, Cloud Messaging, and NetSuite ERP. Multi-tenant white-labelling, released on Google Play and TestFlight. Reduced manual tasks by 45%.",
     role: "Full Stack Developer",
     demo: "",
     code: "",
@@ -18,7 +18,7 @@ export const projectsData = [
     id: 2,
     name: "CRM Mobile App",
     description:
-      "Cross-platform Flutter CRM with sales lead tracking, onboarding, and merchant/customer support. Built with Node.js backend and Firebase. Supports real-time updates, secure auth, and NetSuite integration.",
+      "Cross-platform React Native CRM with Node.js backend and Firebase. Features sales lead tracking, onboarding, real-time updates, secure auth, and NetSuite integration.",
     role: "Full Stack Developer",
     demo: "",
     code: "",
@@ -38,7 +38,7 @@ export const projectsData = [
     id: 4,
     name: "Inventory Management System",
     description:
-      "Inventory and stock tracking app using React.js and Next.js with Node.js backend. Features full admin control, multi-user support, and efficient product management.",
+      "Inventory and stock tracking app built with React.js and Next.js with Node.js backend. Provides admin control, multi-user support, and efficient product management.",
     role: "Full Stack Developer",
     code: "https://github.com/MohamedIjlal27/Saas-Inventory.git",
     demo: "",
@@ -48,7 +48,7 @@ export const projectsData = [
     id: 5,
     name: "From Sri Lanka E-commerce",
     description:
-      "Full-stack ASP.NET and React.js e-commerce site with SQL backend. Included payment gateway integration, mobile-responsive UI, and secure authentication.",
+      "Full-stack ASP.NET and React.js e-commerce site with SQL backend, payment gateway integration, mobile-responsive UI, and secure authentication.",
     role: "Full Stack Developer",
     demo: "",
     code: "",
@@ -58,7 +58,7 @@ export const projectsData = [
     id: 6,
     name: "Sustainability Data Platform (SDP)",
     description:
-      "PWA-enabled Flutter and Next.js web app to visualize sustainability data. GDPR-compliant PostgreSQL APIs, real-time updates via Redis pub/sub. WCAG-compliant UI, optimized with Tailwind and AES-256 secure auth.",
+      "React Native and Next.js PWA with GDPR-compliant Azure PostgreSQL APIs and Redis pub/sub for real-time updates. WCAG-compliant UI optimized with Tailwind CSS and AES-256 secure auth.",
     role: "Full Stack Developer",
     demo: "",
     code: "",
@@ -68,7 +68,7 @@ export const projectsData = [
     id: 7,
     name: "Union Assurance FNA",
     description:
-      "React.js-based mobile-first insurance app with form builder, responsive UI, and role-based dashboards. Supports cross-browser and WCAG accessibility standards.",
+      "Mobile-first React.js insurance app with form builder, responsive UI, cross-browser and WCAG accessibility support.",
     role: "Frontend Developer",
     demo: "",
     code: "",
@@ -78,7 +78,7 @@ export const projectsData = [
     id: 8,
     name: "T&T BOP",
     description:
-      "Credit bureau dashboard built with React.js, Express, and MongoDB. Includes role-based access control, real-time metrics, and reduced reporting time by 40%.",
+      "React.js credit bureau dashboard featuring role-based access, real-time metrics, and 40% faster reporting times.",
     role: "Full Stack Developer",
     demo: "",
     code: "",
@@ -88,7 +88,7 @@ export const projectsData = [
     id: 9,
     name: "Micro Solution",
     description:
-      "Flutter app for QR scanning and workflow automation. Designed with mobile-first principles and integrated real-time scanning logic and user auth.",
+      "React Native QR scanning app with mobile-first UI and real-time workflow automation integrated with user authentication.",
     role: "Mobile App Developer",
     demo: "",
     code: "",
@@ -98,7 +98,7 @@ export const projectsData = [
     id: 10,
     name: "My Dentist ERP",
     description:
-      "Clinic ERP system with Flutter (mobile) and React.js (web). Enabled appointment management, inventory, and billing. Achieved 30% workflow efficiency gains.",
+      "Clinic ERP system with React Native (mobile) and React.js (web). Enabled appointment management, inventory, and billing, improving workflow efficiency by 30%.",
     role: "Full Stack Developer",
     demo: "",
     code: "",
@@ -108,7 +108,7 @@ export const projectsData = [
     id: 11,
     name: "Fraud Detection System",
     description:
-      "React.js and .NET Core web app with D3.js data visualization for fraud analytics. Included JWT/OAuth2 auth, GDPR compliance, and real-time dashboards.",
+      "React.js and Node.js/NestJS web app with D3.js dashboards, GDPR-compliant JWT/OAuth2 authentication, and real-time fraud analytics.",
     role: "Full Stack Developer",
     demo: "",
     code: "",
@@ -118,10 +118,30 @@ export const projectsData = [
     id: 12,
     name: "WMS (Warehouse Management System)",
     description:
-      "Native Android warehouse app built with Kotlin to streamline inventory scanning, dispatching, and receiving. Implemented offline-first functionality with local data sync, improving task speed by 40%.",
+      "Native iOS & Android warehouse app (Swift/Kotlin) with offline-first inventory sync and CRM integration, reducing latency by 40% and errors by 60%.",
     role: "Mobile App Developer",
     demo: "",
     code: "",
     image: "",
-  }
+  },
+  {
+    id: 13,
+    name: "Fintech & Business Apps",
+    description:
+      "React Native apps with Node.js/NestJS backends. Scalable features using Redux architecture, 85%+ test coverage, and CI/CD pipelines deployed on AWS EC2.",
+    role: "Full Stack Developer",
+    demo: "",
+    code: "",
+    image: "",
+  },
+  {
+    id: 14,
+    name: "Dashboard & Microservices",
+    description:
+      "Node.js/NestJS microservices with Azure Redis pub/sub for real-time updates, achieving 25% latency reduction.",
+    role: "Full Stack Developer",
+    demo: "",
+    code: "",
+    image: "",
+  },
 ];
