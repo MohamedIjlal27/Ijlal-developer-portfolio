@@ -8,7 +8,7 @@ export const projectsData = [
     id: 1,
     name: "SFA(Sales Force Automation)",
     description:
-      "A cross-platform React Native mobile app built to showcase end-to-end capabilities. Utilizes Redux for modular state management, integrated with a custom backend using Node.js/NestJS and PostgreSQL. Real-time data updates are handled via WebSocket integration. Includes support for multi-tenant white-labelling through environment-based configurations. Designed and built as a proof-of-concept to demonstrate production-ready architecture and development proficiency.",
+      "A cross-platform Flutter mobile and Web Admin portal app built to showcase end-to-end capabilities. Utilizes BLoC Pattern for Flutter state management and Redux for modular state management, integrated with a custom backend using Node.js/NestJS and PostgreSQL. Real-time data updates are handled via WebSocket integration. Includes support for multi-tenant white-labelling through environment-based configurations. Designed and built as a proof-of-concept to demonstrate production-ready architecture and development proficiency.",
     role: "Full Stack Developer",
     demo: "",
     code: "",
@@ -18,7 +18,7 @@ export const projectsData = [
     id: 2,
     name: "DMS (Delivery Management System)",
     description:
-      "React Native mobile app integrated with Firebase Auth, Cloud Messaging, and NetSuite ERP. Multi-tenant white-labelling, released on Google Play and TestFlight. Reduced manual tasks by 45%.",
+      "Flutter mobile app integrated with Firebase Auth, Cloud Messaging, and NetSuite ERP. Utilizes BLoC Pattern for state management. Multi-tenant white-labelling, released on Google Play and TestFlight. Reduced manual tasks by 45%.",
     role: "Full Stack Developer",
     demo: "",
     code: "",
@@ -28,7 +28,7 @@ export const projectsData = [
     id: 3,
     name: "CRM Mobile App",
     description:
-      "Cross-platform React Native CRM with Node.js backend and Firebase. Features sales lead tracking, onboarding, real-time updates, secure auth, and NetSuite integration.",
+      "Cross-platform Flutter CRM with Node.js backend and Firebase. Features sales lead tracking, onboarding, real-time updates, secure auth, and NetSuite integration. Utilizes BLoC Pattern for state management.",
     role: "Full Stack Developer",
     demo: "",
     code: "",
@@ -68,7 +68,7 @@ export const projectsData = [
     id: 7,
     name: "Sustainability Data Platform (SDP)",
     description:
-      "React Native and Next.js PWA with GDPR-compliant Azure PostgreSQL APIs and Redis pub/sub for real-time updates. WCAG-compliant UI optimized with Tailwind CSS and AES-256 secure auth.",
+      "Flutter and Next.js PWA with GDPR-compliant Azure PostgreSQL APIs and Redis pub/sub for real-time updates. Utilizes BLoC Pattern for Flutter state management and Redux for web state management. WCAG-compliant UI optimized with Tailwind CSS and AES-256 secure auth.",
     role: "Full Stack Developer",
     demo: "",
     code: "",
@@ -98,7 +98,7 @@ export const projectsData = [
     id: 10,
     name: "Micro Solution",
     description:
-      "React Native QR scanning app with mobile-first UI and real-time workflow automation integrated with user authentication.",
+      "Flutter QR scanning app with mobile-first UI and real-time workflow automation integrated with user authentication. Utilizes BLoC Pattern for state management.",
     role: "Mobile App Developer",
     demo: "",
     code: "",
@@ -108,7 +108,7 @@ export const projectsData = [
     id: 11,
     name: "My Dentist ERP",
     description:
-      "Clinic ERP system with React Native (mobile) and React.js (web). Enabled appointment management, inventory, and billing, improving workflow efficiency by 30%.",
+      "Clinic ERP system with Flutter (mobile) and React.js (web). Utilizes BLoC Pattern for Flutter state management and Redux for web state management. Enabled appointment management, inventory, and billing, improving workflow efficiency by 30%.",
     role: "Full Stack Developer",
     demo: "",
     code: "",
@@ -138,7 +138,7 @@ export const projectsData = [
     id: 14,
     name: "Fintech & Business Apps",
     description:
-      "React Native apps with Node.js/NestJS backends. Scalable features using Redux architecture, 85%+ test coverage, and CI/CD pipelines deployed on AWS EC2.",
+      "Flutter apps with Node.js/NestJS backends. Scalable features using BLoC Pattern for state management, 85%+ test coverage, and CI/CD pipelines deployed on AWS EC2.",
     role: "Full Stack Developer",
     demo: "",
     code: "",
