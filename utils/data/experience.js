@@ -4,7 +4,7 @@ export const experiences = [
      title: "Software Engineer(Mobile & Web)",
      company: "Virtunova Pvt Ltd.",
      workmode: "Remote",
-     duration: "(December 2024 - April 2025)",
+     duration: "(December 2024 - September 2025)",
   },
   {
     id: 2,
