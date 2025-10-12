@@ -29,8 +29,9 @@ export const experiences = [
   },
   {
     id: 5,
-    title: "Freelance Software Developer",
+    title: "Outsource Software Developer",
+    company: "Singha Recruitment Agency Pvt Ltd.",
     workmode: "Remote",
-    duration: "(2022-Present)",
+    duration: "(January 2020 - February 2022)",
   },
 ];
