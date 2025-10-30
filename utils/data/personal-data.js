@@ -3,7 +3,11 @@ export const personalData = {
   profile: "/profile.jpg",
   designation: "Software Developer",
   description:
-    `Full-Stack & Mobile Developer with 3+ years of experience, specializing in Flutter & Dart for cross-platform mobile applications, with deep knowledge of Firebase integrations (auth, messaging, remote config), mobile app releases (Play Store, TestFlight), and secure configuration management (multi-tenancy/app flavors). Proficient with Azure DevOps, JavaScript/TypeScript, and backend systems built using Node.js and .Net. Experienced in developing and maintaining Progressive Web Apps (PWA) via Flutter and using monitoring tools like Sentry. Comfortable with agile environments and multi-technology stacks`,
+    `Senior Full-Stack Developer with 4+ years of experience building scalable fintech and SaaS applications using Node.js,
+NestJS, React.js, and Next.js. Specialized in backend-heavy architectures (80%), integrating complex payment and financial
+service APIs, and developing high-performance microservices with MongoDB, PostgreSQL, and Redis. Experienced in
+TypeScript, GraphQL, REST, RabbitMQ, and TDD with Jest. Proven record of delivering production-grade systems for fintech,
+insurance, and logistics platforms. Currently based in Dubai, open to relocation to Limassol, Cyprus Immediately` 
   email: "mohamedijlal27@outlook.com",
   phone: "+94727920628",
   address: "Colombo Sri Lanka ",
