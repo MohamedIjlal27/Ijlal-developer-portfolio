@@ -27,7 +27,7 @@ function HeroSection() {
             {/* Main Heading */}
             <div className="space-y-4">
               <p className="text-gray-600 text-sm md:text-base font-medium uppercase tracking-widest">
-                Hey there, I'm
+                Hey there, I&apos;m
               </p>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tighter">
                 <span className="block text-gray-900">{personalData.name}</span>

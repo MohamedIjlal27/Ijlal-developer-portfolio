@@ -19,11 +19,11 @@ function ContactSection() {
           Get in Touch
         </p>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-          Let's Connect
+          Let&apos;s Connect
         </h2>
         <p className="text-gray-600 text-lg max-w-2xl">
-          Have a project in mind? Let's collaborate and create something amazing
-          together
+          Have a project in mind? Let&apos;s collaborate and create something
+          amazing together
         </p>
       </div>
 
