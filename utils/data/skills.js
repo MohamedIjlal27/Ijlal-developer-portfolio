@@ -1,103 +1,136 @@
 export const skillsData = [
-  "HTML",
-  "CSS",
+  // Frontend Development
+  "React",
+  "Next JS",
+  "React Native",
+  "Dart",
+  "Flutter",
   "Javascript",
   "Typescript",
-  "React",
+  "HTML",
+  "CSS",
   "Tailwind",
-  "MongoDB",
-  "MySQL",
-  "Java",
-  "PostgreSQL",
-  "Linux",
-  "Git",
-  "AWS",
   "Bootstrap",
-  "Docker",
-  "Go",
-  "Figma",
-  "Firebase",
   "MaterialUI",
-  "Nginx",
-  "Strapi",
-  "ViteJS",
-  "Next JS",
-  "Nuxt JS",
+
+  // State Management & Data Flow
+  "Redux",
+  "Context API",
+  "BLoC Pattern",
+
+  // Backend Development
   "Node JS",
   "Express",
+  "NestJS",
   "C#",
-  "Flutter",
-  "Dart",
+  "Go",
+
+  // Databases & Data Management
+  "PostgreSQL",
+  "MySQL",
+  "MongoDB",
+  "Firebase",
+  "Redis",
+
+  // Cloud & DevOps
+  "AWS",
+  "Azure",
+  "Docker",
+  "Nginx",
+
+  // Build Tools & Tooling
+  "ViteJS",
+  "Git",
+
+  // Testing & Quality
+  "Jest",
+
+  // Design & Prototyping
+  "Figma",
+
+  // Other Technologies
+  "Java",
+  "Linux",
+  "Strapi",
 ];
 
-// Choose your skills from below. Make sure it's in the same format and spelled correctly.
-// Couldn't find the required skills? Raise an issue on github at https://github.com/hhhrrrttt222111/developer-portfolio/issues/new
+// CATEGORIZED SKILLS (for detailed display)
+export const categorizedSkills = {
+  "Frontend Development": [
+    "React.js",
+    "Next.js",
+    "React Native",
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "Bootstrap",
+    "Material-UI",
+  ],
+  "State Management": [
+    "Redux",
+    "Context API",
+    "Data Flow Architecture",
+    "BLoC Pattern",
+  ],
+  "Backend Development": [
+    "Node.js",
+    "Express.js",
+    "NestJS",
+    "REST APIs",
+    "JSON APIs",
+    "Asynchronous Programming",
+  ],
+  "Databases & Caching": [
+    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "Redis (Caching)",
+    "Database Design",
+    "Query Optimization",
+  ],
+  "Cloud & DevOps": ["AWS", "Azure", "CI/CD Pipelines", "Docker", "Nginx"],
+  "Testing & Quality": [
+    "Unit Testing",
+    "TDD (Test-Driven Development)",
+    "BDD (Behavior-Driven Development)",
+    "Jest",
+    "Debugging",
+  ],
+  "Mobile Development": [
+    "React Native",
+    "Flutter",
+    "Dart",
+    "iOS (Swift)",
+    "Android (Kotlin)",
+  ],
+  "Build Tools & Tooling": [
+    "Webpack",
+    "Babel",
+    "ViteJS",
+    "Android Studio",
+    "Xcode",
+    "Git",
+  ],
+  "Security & Architecture": [
+    "JWT Authentication",
+    "OAuth2",
+    "RBAC (Role-Based Access Control)",
+    "Clean Code Practices",
+    "Design Patterns",
+    "Microservices Architecture",
+  ],
+  "Agile & Project Management": [
+    "Agile Development",
+    "Scrum",
+    "Sprint Planning",
+    "User Stories",
+    "JIRA",
+  ],
+};
 
-// AVAILABLE SKILLS
-
-/* 
-  HTML
-  CSS
-  JS 
-  React
-  Next JS
-  Nuxt JS
-  Node JS
-  Vue
-  Angular
-  Docker
-  Photoshop
-  Illustrator
-  Svelte
-  GCP
-  Azure
-  Fastify
-  Haxe
-  Ionic
-  Markdown
-  Microsoft Office
-  Picsart
-  Sketch
-  Unity
-  WolframAlpha
-  Adobe XD
-  After Effects
-  Bootstrap
-  Bulma
-  CapacitorJs
-  Coffeescript
-  MemSQL
-  C
-  C++
-  C#
-  Python
-  Java
-  Julia
-  Matlab
-  Swift
-  Ruby
-  Kotlin
-  Go
-  PHP
-  Flutter
-  Dart
-  Typescript
-  Swift
-  Git
-  Figma
-  Canva
-  Ubuntu
-  Bootstrap
-  MongoDB
-  Tailwind
-  ViteJS
-  VuetifyJS
-  MySQL
-  PostgreSQL
-  AWS
-  Firebase
-  Blender
-  Premiere Pro
+/*
   Adobe Audition
   Deno
   Django

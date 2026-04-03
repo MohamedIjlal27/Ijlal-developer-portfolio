@@ -1,70 +1,84 @@
 // @flow strict
 
-import * as React from 'react';
+import * as React from "react";
 
 function ProjectCard({ project }) {
   return (
-    <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full h-[500px]">
-      <div className="flex flex-row">
-        <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
-        <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
-      </div>
-      <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
-        <div className="flex flex-row space-x-1 lg:space-x-2 absolute top-1/2 -translate-y-1/2">
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-red-400"></div>
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-orange-400"></div>
-          <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-green-200"></div>
+    <div className="bg-white border border-gray-200 hover:border-sky-500 relative rounded-lg w-full h-[500px] transition-all duration-300 hover:shadow-soft overflow-hidden group">
+      {/* Header */}
+      <div className="flex flex-row items-center justify-between px-6 lg:px-8 py-4 lg:py-5 border-b border-gray-200">
+        <div className="flex flex-row space-x-2">
+          <div className="h-3 w-3 lg:h-3 lg:w-3 rounded-full bg-red-400"></div>
+          <div className="h-3 w-3 lg:h-3 lg:w-3 rounded-full bg-orange-400"></div>
+          <div className="h-3 w-3 lg:h-3 lg:w-3 rounded-full bg-green-400"></div>
         </div>
-        <p className="text-center ml-3 text-[#16f2b3] text-base lg:text-xl">
+        <p className="text-center text-sky-500 text-sm lg:text-lg font-semibold ml-4 flex-1">
           {project.name}
         </p>
       </div>
-      <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8 h-[calc(100%-60px)]">
-        <code className="font-mono text-xs md:text-sm lg:text-base h-full flex flex-col">
-          <div className="blink">
-            <span className="mr-2 text-pink-500">const</span>
-            <span className="mr-2 text-white">project</span>
-            <span className="mr-2 text-pink-500">=</span>
-            <span className="text-gray-400">{'{'}</span>
-          </div>
+
+      {/* Content Area */}
+      <div className="overflow-hidden px-4 lg:px-8 py-4 lg:py-8 h-[calc(100%-60px)] bg-white">
+        <code className="font-mono text-xs md:text-sm lg:text-base h-full flex flex-col space-y-2 text-gray-700">
           <div>
-            <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
+            <span className="mr-2 text-sky-500">const</span>
+            <span className="mr-2 text-gray-900">project</span>
+            <span className="mr-2 text-red-500">=</span>
+            <span className="text-gray-400">{"{"}</span>
+          </div>
+
+          <div>
+            <span className="ml-4 lg:ml-8 mr-2 text-gray-900">name:</span>
             <span className="text-gray-400">{`'`}</span>
-            <span className="text-amber-300">{project.name}</span>
+            <span className="text-amber-600">{project.name}</span>
             <span className="text-gray-400">{`',`}</span>
           </div>
 
           {project.tools && (
             <div className="ml-4 lg:ml-8 mr-2">
-              <span className="text-white">tools:</span>
-              <span className="text-gray-400">{` ['`}</span>
-              {
-                project.tools.map((tag, i) => (
+              <span className="text-gray-900">tech:</span>
+              <span className="text-gray-400">{` [`}</span>
+              <div className="ml-4">
+                {project.tools.map((tag, i) => (
                   <React.Fragment key={i}>
-                    <span className="text-amber-300">{tag}</span>
-                    {
-                      project.tools.length - 1 !== i &&
-                      <span className="text-gray-400">{`', '`}</span>
-                    }
+                    <span className="text-purple-600">{`'${tag}'`}</span>
+                    {project.tools.length - 1 !== i && (
+                      <span className="text-gray-400">{`, `}</span>
+                    )}
                   </React.Fragment>
-                ))
-              }
-              <span className="text-gray-400">{"],"}</span>
+                ))}
+              </div>
+              <span className="text-gray-400">{`],`}</span>
             </div>
           )}
+
           <div>
-            <span className="ml-4 lg:ml-8 mr-2 text-white">myRole:</span>
-            <span className="text-orange-400">{project.role}</span>
+            <span className="ml-4 lg:ml-8 mr-2 text-gray-900">role:</span>
+            <span className="text-amber-600">{`'${project.role}'`}</span>
             <span className="text-gray-400">,</span>
           </div>
-          <div className="ml-4 lg:ml-8 mr-2">
-            <span className="text-white">Description:</span>
-            <span className="text-cyan-400">{' ' + project.description}</span>
+
+          <div>
+            <span className="ml-4 lg:ml-8 mr-2 text-gray-900">summary:</span>
+            <span className="text-green-600">{`'${project.description}'`}</span>
           </div>
-          <div className="ml-4 lg:ml-8 mr-2">
-            <span className="text-cyan-400">{' ' + project.code}</span>
+
+          <div>
+            <span className="text-gray-400">{`}`}</span>
           </div>
-          <div><span className="text-gray-400">{`};`}</span></div>
+
+          {project.code && (
+            <div className="mt-auto pt-2 border-t border-gray-200">
+              <a
+                href={project.code}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-sky-500 hover:text-sky-600 transition-colors duration-300 group-hover:underline text-xs lg:text-sm"
+              >
+                {"→ View Code"}
+              </a>
+            </div>
+          )}
         </code>
       </div>
     </div>

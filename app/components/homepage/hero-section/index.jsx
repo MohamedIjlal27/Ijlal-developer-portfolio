@@ -1,195 +1,136 @@
 // @flow strict
 
 import { personalData } from "@/utils/data/personal-data";
+import { experiences } from "@/utils/data/experience";
+import { calculateTotalExperience } from "@/utils/calculate-experience";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
-import { MdDownload } from "react-icons/md";
-import { RiContactsFill } from "react-icons/ri";
-import { SiLeetcode } from "react-icons/si";
+import { MdArrowOutward } from "react-icons/md";
 
 function HeroSection() {
+  const totalExperience = calculateTotalExperience(experiences);
   return (
-    <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
-      <Image
-        src="/hero.svg"
-        alt="Hero"
-        width={1572}
-        height={795}
-        className="absolute -top-[98px] -z-10"
-      />
+    <section className="relative w-full min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden py-8 lg:py-0">
+      <div className="w-full px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center min-h-[calc(100vh-150px)] lg:min-h-auto">
+          {/* Left Content */}
+          <div className="flex flex-col justify-center space-y-8 order-2 lg:order-1">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 w-fit px-4 py-2 rounded-full bg-sky-50 border border-sky-200">
+              <div className="w-2 h-2 bg-sky-500 rounded-full"></div>
+              <span className="text-xs text-sky-600 font-semibold uppercase tracking-widest">
+                Available for work
+              </span>
+            </div>
 
-      <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
-        <div className="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
-          <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
-            Hello, <br />
-            This is {' '}
-            <span className=" text-pink-500">{personalData.name}</span>
-            {` , I'm a Professional `}
-            <span className=" text-[#16f2b3]">{personalData.designation}</span>
-            .
-          </h1>
+            {/* Main Heading */}
+            <div className="space-y-4">
+              <p className="text-gray-600 text-sm md:text-base font-medium uppercase tracking-widest">
+                Hey there, I'm
+              </p>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tighter">
+                <span className="block text-gray-900">{personalData.name}</span>
+                <span className="block text-sky-500 text-4xl md:text-5xl lg:text-6xl mt-2">
+                  Full Stack Developer
+                </span>
+              </h1>
+            </div>
 
-          <div className="my-12 flex items-center gap-5">
-            <Link
-              href={personalData.github}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <BsGithub size={30} />
-            </Link>
-            <Link
-              href={personalData.linkedIn}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <BsLinkedin size={30} />
-            </Link>
-            {/* <Link
-              href={personalData.facebook}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <FaFacebook size={30} />
-            </Link> 
-           <Link
-              href={personalData.leetcode}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <SiLeetcode size={30} />
-            </Link> 
-            <Link
-              href={personalData.twitter}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <FaTwitterSquare size={30} />
-            </Link> */}
-          </div>
+            {/* Description */}
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-md font-medium">
+              I craft beautiful, scalable web experiences with modern
+              technologies. Passionate about clean code and solving complex
+              problems.
+            </p>
 
-         {/* <div className="flex items-center gap-3">
-            <Link href="#contact" className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600">
-              <button className="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
-                <span>Contact me</span>
-                <RiContactsFill size={16} />
-              </button>
-            </Link>
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <Link
+                href="#projects"
+                className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-sky-500 text-white font-bold rounded-lg hover:bg-sky-600 transition-all duration-300 hover:-translate-y-1"
+              >
+                View My Work
+                <MdArrowOutward
+                  className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"
+                  size={20}
+                />
+              </Link>
+            </div>
 
-            <Link className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold" role="button" target="_blank" href={personalData.resume}
-            >
-              {/* <span>Get Resume</span> */}
-              {/* <MdDownload size={16} /> */}
-            {/* </Link> 
-          </div> */}
-
-        </div>
-        <div className="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
-          <div className="flex flex-row">
-            <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
-            <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
-          </div>
-          <div className="px-4 lg:px-8 py-5">
-            <div className="flex flex-row space-x-2">
-              <div className="h-3 w-3 rounded-full bg-red-400"></div>
-              <div className="h-3 w-3 rounded-full bg-orange-400"></div>
-              <div className="h-3 w-3 rounded-full bg-green-200"></div>
+            {/* Social Links */}
+            <div className="flex items-center gap-6 pt-8 border-t border-gray-200">
+              <p className="text-gray-600 text-sm font-medium">
+                Connect with me:
+              </p>
+              <div className="flex gap-4">
+                <a
+                  href={personalData.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-lg bg-white border border-gray-200 text-gray-700 hover:text-sky-500 hover:border-sky-500 hover:bg-sky-50 transition-all duration-300"
+                >
+                  <BsGithub size={20} />
+                </a>
+                <a
+                  href={personalData.linkedIn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-lg bg-white border border-gray-200 text-gray-700 hover:text-sky-500 hover:border-sky-500 hover:bg-sky-50 transition-all duration-300"
+                >
+                  <BsLinkedin size={20} />
+                </a>
+              </div>
             </div>
           </div>
-          <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
-            <code className="font-mono text-xs md:text-sm lg:text-base">
-              <div className="blink">
-                <span className="mr-2 text-pink-500">const</span>
-                <span className="mr-2 text-white">coder</span>
-                <span className="mr-2 text-pink-500">=</span>
-                <span className="text-gray-400">{'{'}</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
-                <span className="text-gray-400">{`'`}</span>
-                <span className="text-amber-300">Mohamed Ijlal</span>
-                <span className="text-gray-400">{`',`}</span>
-              </div>
-              <div className="ml-4 lg:ml-8 mr-2">
-                <span className=" text-white">skills:</span>
-                <span className="text-gray-400">{`['`}</span>
-                <span className="text-amber-300">React</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Flutter</span>
-                <span className="text-gray-400">{"',"}</span>
-                <span className="text-amber-300">NextJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Redux</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Express</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NestJS</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MySql</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">MongoDB</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Linux</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">Docker</span>
-                <span className="text-gray-400">{"', '"}</span>
-                <span className="text-amber-300">NetSuite ERP</span>
-                <span className="text-gray-400">{"',"}</span>
-                <span className="text-amber-300">AWS</span>
-                <span className="text-gray-400">{"', "}</span>
-                <span className="text-amber-300">React Native</span>
-                <span className="text-gray-400">{"'],"}</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">hardWorker:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">quickLearner:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">problemSolver:</span>
-                <span className="text-orange-400">true</span>
-                <span className="text-gray-400">,</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-green-400">hireable:</span>
-                <span className="text-orange-400">function</span>
-                <span className="text-gray-400">{'() {'}</span>
-              </div>
-              <div>
-                <span className="ml-8 lg:ml-16 mr-2 text-orange-400">return</span>
-                <span className="text-gray-400">{`(`}</span>
-              </div>
-              <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">hardWorker</span>
-                <span className="text-amber-300">&amp;&amp;</span>
-              </div>
-              <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">problemSolver</span>
-                <span className="text-amber-300">&amp;&amp;</span>
-              </div>
-              <div>
-                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
-                <span className="mr-2 text-white">skills.length</span>
-                <span className="mr-2 text-amber-300">&gt;=</span>
-                <span className="text-orange-400">5</span>
-              </div>
-              <div><span className="ml-8 lg:ml-16 mr-2 text-gray-400">{`);`}</span></div>
-              <div><span className="ml-4 lg:ml-8 text-gray-400">{`};`}</span></div>
-              <div><span className="text-gray-400">{`};`}</span></div>
-            </code>
+
+          {/* Right - Profile Image */}
+          <div className="relative order-1 lg:order-2 flex justify-center items-center h-full min-h-[400px] lg:min-h-auto">
+            {/* Image Container */}
+            <div className="relative z-10 w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border border-gray-200 shadow-soft">
+              <Image
+                src={personalData.profile}
+                alt={personalData.name}
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+
+            {/* Floating badges */}
+            <div className="absolute -bottom-6 -left-6 px-6 py-3 bg-sky-500 text-white font-bold rounded-xl shadow-soft">
+              <p className="text-sm md:text-base">
+                {totalExperience}+ Years Exp
+              </p>
+            </div>
+
+            <div className="absolute -top-6 -right-6 px-6 py-3 bg-white border border-sky-200 text-sky-600 font-bold rounded-xl shadow-soft">
+              <p className="text-sm md:text-base">React Expert</p>
+            </div>
           </div>
+        </div>
+
+        {/* Bottom scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+          <p className="text-gray-600 text-xs uppercase tracking-widest font-medium">
+            Scroll down
+          </p>
+          <svg
+            className="w-5 h-5 text-sky-500"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
+          </svg>
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default HeroSection;

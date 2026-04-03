@@ -1,39 +1,38 @@
 // @flow strict
 
 import { personalData } from "@/utils/data/personal-data";
-import Image from "next/image";
-
 
 function AboutSection() {
   return (
-    <div id="about" className="my-12 lg:my-16 relative">
-      <div className="hidden lg:flex flex-col items-center absolute top-16 -right-8">
-        <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
-          ABOUT ME
-        </span>
-        <span className="h-36 w-[2px] bg-[#1a1443]"></span>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-        <div className="order-2 lg:order-1">
-          <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
-            Who I am?
-          </p>
-          <p className="text-gray-200 text-sm lg:text-lg">
-            {personalData.description}
-          </p>
+    <div id="about" className="my-16 lg:my-24">
+      <div className="mb-12 lg:mb-16">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="h-1 w-12 bg-gradient-to-r from-sky-500 to-sky-400 rounded-full"></div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+            About Me
+          </h2>
         </div>
-        <div className="flex justify-center order-1 lg:order-2">
-          <Image
-            src={personalData.profile}
-            width={280}
-            height={280}
-            alt="Abu Said"
-            className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
-          />
+      </div>
+
+      <div className="flex justify-center">
+        <div className="max-w-5xl w-full">
+          {/* Main Description Card */}
+          <div className="group relative p-8 md:p-10 rounded-xl border border-gray-100 hover:border-sky-200 bg-white hover:shadow-lg transition-all duration-300">
+            {/* Decorative accent */}
+            <div className="absolute top-0 left-0 w-1 h-12 bg-gradient-to-b from-sky-500 to-transparent rounded-full"></div>
+
+            <p className="text-sky-500 text-xs md:text-sm font-semibold uppercase tracking-widest mb-5">
+              Professional Overview
+            </p>
+
+            <p className="text-gray-700 text-base md:text-lg leading-relaxed font-light text-justify">
+              {personalData.description}
+            </p>
+          </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default AboutSection;
