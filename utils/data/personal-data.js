@@ -1,5 +1,5 @@
 export const personalData = {
-  name: "Mohamed Ijlal",
+  name: "IJLAL FAIROS",
   profile: "/profile.jpg",
   designation: "Software Developer",
   description: `Senior Full Stack Engineer with 5 years of experience designing, developing, and delivering scalable, high-performance web

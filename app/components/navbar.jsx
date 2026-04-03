@@ -10,7 +10,7 @@ function Navbar() {
             href="/"
             className="text-2xl md:text-3xl font-bold text-sky-500 hover:text-sky-600 transition-colors duration-300"
           >
-            MI
+            IF
           </Link>
         </div>
 

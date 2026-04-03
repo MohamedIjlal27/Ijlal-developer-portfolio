@@ -8,7 +8,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
           {/* Brand Section */}
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-2xl font-bold text-sky-500 mb-3">MI</h3>
+            <h3 className="text-2xl font-bold text-sky-500 mb-3">IF</h3>
             <p className="text-gray-600 text-sm text-center md:text-left">
               Building digital excellence through code and creativity.
             </p>
@@ -82,7 +82,7 @@ function Footer() {
               href="/"
               className="text-sky-500 hover:text-sky-600 transition-colors duration-300"
             >
-              Mohamed Ijlal
+              IJLAL FAIROS
             </Link>
             . All rights reserved.
           </p>
